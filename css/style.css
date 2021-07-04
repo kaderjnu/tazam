@@ -1,0 +1,383 @@
+/* css typography */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar Part css start */
+.navbar-section {
+    /* background: url(../img/homebg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 7; */
+}
+
+.navbar-section::after {
+    /* position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 3, 32, .7);
+     */
+    z-index: -1;
+}
+
+.navbg {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-items {
+    margin-left: auto;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #00E0D0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #00E0D0;
+}
+
+.navbar-logo {
+    font-family: 'Anton', sans-serif;
+    font-size: x-large;
+    color: #fff !important;
+}
+
+/* banner section html start */
+#banner-section {
+
+    background: url(../img/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#banner-section::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 3, 32, .7);
+    z-index: -1;
+}
+
+.banner-text h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+}
+
+.banner-text h2::after {
+    position: absolute;
+    content: "";
+    left: 14em;
+    top: 1.7em;
+    width: 2em;
+    height: 2px;
+    background: #00E0D0;
+}
+
+.banner-text p {
+    color: #fff;
+    padding: 30px 8em;
+    font-size: 14px;
+}
+
+.banner-text a {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #00E0D0;
+    padding: 17px 35px;
+    color: #00E0D0;
+    transition: .4s ease-in-out;
+    font-size: 1.2em;
+}
+
+.banner-text a:hover {
+    background: #00E0D0;
+    color: #fff;
+}
+
+/* about-section start */
+.about-text h2 {
+    color: #797979;
+}
+
+.about-text p {
+    color: #797979;
+    margin-top: .7em;
+    font-style: 14px;
+}
+
+.about-text a {
+    color: #00E0D0;
+    border: 1px solid #00E0D0;
+    padding: .7em 1.3em;
+    margin-top: .5em;
+    display: inline-block;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+.about-text a:hover {
+    background: #00E0D0;
+    color: #fff;
+}
+
+/* about-section end */
+/* VIDEO SECTION START */
+.video-section {
+    padding: 10em 0;
+    background: url(../img/videobg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 5;
+}
+
+.video-section::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000086;
+    opacity: .3;
+    z-index: -5;
+}
+
+.video-content span {
+    font-size: 5em;
+    color: white;
+    display: block;
+    cursor: pointer;
+}
+
+.video-content h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+/* VIDEO SECTION END */
+
+/* expertise-section Start */
+.expertise-section {
+    padding: 100px 0;
+    font-family: 'Playfair Display', bold;
+}
+
+.expert-top p,
+.team-top p {
+    font-size: 14px;
+    color: #797979;
+    padding: 10px 0;
+    position: relative;
+}
+
+.expert-top p::after,
+.team-top p::after {
+    position: absolute;
+    content: "";
+    left: 37em;
+    top: 4em;
+    width: 5em;
+    height: 2px;
+    background: #797979;
+}
+
+.expert-bottom {
+    padding-top: 100px;
+}
+
+.expert-bottom span {
+    color: #95E1D3;
+    font-size: 2em;
+}
+
+.expert-bottom h2 {
+    padding: .5em 0;
+    font-size: 1.5em;
+}
+
+/* expertise-section end */
+
+/* team member aection start */
+.team-section {
+    background: url(../img/teambg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 5em 0;
+    z-index: 5;
+    position: relative;
+    ;
+
+}
+
+.team-section::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000086;
+    opacity: .3;
+    z-index: -5;
+}
+
+.team-top h2 {
+    color: #fff;
+}
+
+.team-top p {
+    color: #fff;
+}
+
+.team-top p::after {
+    background: white;
+}
+
+.team-members {}
+
+.team-member {}
+
+.team-member-content {
+    border: 1px solid #fff;
+    width: 100% !important;
+    margin-top: 10em;
+}
+
+.team-member-img {
+    height: 216px;
+}
+
+.team-member-img {
+    background: none;
+}
+
+.team-member-text {
+    color: white;
+    font-weight: bold;
+}
+
+.team-bottom {}
+
+.team-bottom P {
+    margin-top: 5em;
+}
+
+.team-bottom a {
+    border: 1px solid #00E0D0;
+    color: #00E0D0;
+    padding: 1em 3em;
+    margin-top: 1em;
+    display: inline-block;
+    word-spacing: .1em;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+.team-bottom a:hover {
+    background: #00E0D0;
+    color: white;
+
+}
+
+.custom {
+    text-align: right;
+}
+
+.team-member-text a {}
+
+/* team member aection end*/
+/* Our Work Section */
+.custom-work {}
+
+.custom-work .col-lg-2 {
+    padding: 0;
+}
+/* Feedback section  start*/
+.feedback-section{
+    background: url(../img/homebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 8em 0;
+    position: relative;
+    z-index: 5;
+}
+.feedback-section::after{
+    position: absolute;
+    z-index: -5;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#222;
+    opacity: .7;
+}
+.feedback-content{}
+.feedback-content span {
+	font-size: 3em;
+	color: #fff;
+}
+.feedback-content p {
+	color: white;
+	padding: 10px 11em;
+}
+.feedback-content h2 {
+	color: white;
+	font-weight: bold;
+    font-size: 1.3em;
+}
+.feedback-content h4 {
+	font-size: 1.2em;
+	color: white;
+}
+.feedback-list{}
+.feedback-list li {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+.feedback-list li a{}
+.feedback-list li a img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
